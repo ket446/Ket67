@@ -1,60 +1,37 @@
-arquivo = "tarefas.txt"
+# 📚 Projeto - Materiais Complementares e Git
 
-# Carrega tarefas do arquivo
-try:
-    with open(arquivo, "r") as f:
-        tarefas = [linha.strip() for linha in f.readlines()]
-except FileNotFoundError:
-    tarefas = []
+## 📌 Descrição
+Este projeto tem como objetivo apresentar conceitos importantes sobre o uso do Git e disponibilizar materiais complementares para auxiliar no aprendizado e desenvolvimento na área de tecnologia.
 
-def mostrar_menu():
-    print("\n=== MINHA LISTA DE TAREFAS ===")
-    if tarefas:
-        for i, t in enumerate(tarefas, start=1):
-            print(f"{i}. {t}")
-    else:
-        print("Nenhuma tarefa cadastrada ainda.")
-    print("\nComandos: 'adicionar', 'remover', 'concluir', 'sair'")
+## 🎯 Objetivos
+- Facilitar o aprendizado com materiais de apoio
+- Apresentar a importância do Git no mercado de trabalho
+- Incentivar o uso de boas práticas no desenvolvimento
 
-def salvar_tarefas():
-    with open(arquivo, "w") as f:
-        for t in tarefas:
-            f.write(t + "\n")
+## 🔗 Repositório de Referência
+Durante o desenvolvimento, foi utilizado como base o seguinte repositório:
 
-while True:
-    mostrar_menu()
-    comando = input("Digite um comando: ").strip().lower()
+https://github.com/digitalinnovationone/my-first-copilot
 
-    if comando == "sair":
-        break
-    elif comando == "adicionar":
-        tarefa = input("Digite a tarefa: ").strip()
-        tarefas.append(tarefa)
-        print(f"Tarefa '{tarefa}' adicionada!")
-    elif comando == "remover":
-        try:
-            numero = int(input("Número da tarefa para remover: "))
-            if 1 <= numero <= len(tarefas):
-                removida = tarefas.pop(numero-1)
-                print(f"Tarefa '{removida}' removida!")
-            else:
-                print("Número inválido!")
-        except ValueError:
-            print("Digite um número válido!")
-    elif comando == "concluir":
-        try:
-            numero = int(input("Número da tarefa concluída: "))
-            if 1 <= numero <= len(tarefas):
-                concluida = tarefas[numero-1]
-                tarefas[numero-1] = f"[Concluída] {concluida}"
-                
-                print(f"Tarefa '{concluida}' marcada como concluída!")
-            else:
-                print("Número inválido!")
-        except ValueError:
-            print("Digite um número válido!")
-    else:
-        print("Comando não reconhecido!")
+## 📖 Materiais Complementares
+Os materiais incluem:
+- Links úteis (slides, repositórios e páginas oficiais)
+- Dicas de estudo
+- Conteúdos para aprofundamento na área de tecnologia
 
-salvar_tarefas()
-print("\nTodas as tarefas foram salvas. Até logo! 🚀")
+## 💡 Dicas Importantes
+
+### 📝 Artigos e Fóruns
+- Compartilhar conhecimentos através de artigos
+- Tirar dúvidas e interagir em fóruns
+
+### 🌐 Pesquise na Web
+A prática de pesquisar é essencial para profissionais de TI.  
+Ferramentas como o Google e fóruns como o StackOverflow ajudam a resolver problemas e aprender mais rapidamente.
+
+## 💻 Tecnologias utilizadas
+- Git
+- GitHub
+
+## 👩‍💻 Autora
+Ketley Haryane 💖
