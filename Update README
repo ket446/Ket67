@@ -1,0 +1,16 @@
+# 🚗 Projeto Mario Kart - Node.js
+
+## 📌 Descrição
+Este projeto foi desenvolvido como parte do desafio da DIO, com o objetivo de praticar conceitos de Node.js.
+
+## 🎯 Objetivo
+Criar uma aplicação baseada no jogo Mario Kart, aplicando lógica de programação e conceitos aprendidos no curso.
+
+## 🛠️ Tecnologias utilizadas
+- Node.js
+- JavaScript
+
+## ▶️ Como executar o projeto
+1. Clone o repositório:
+```bash
+git clone SEU-LINK-AQUI
